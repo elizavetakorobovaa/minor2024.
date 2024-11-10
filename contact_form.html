@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Расширенная форма</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo-link" href="./index.html">Туризм.ру</a>
+      <nav class="nav">
+        <ul class="header__list">
+          <li><a href="page2.html">Волгоград</a></li>
+          <li><a class="active_page" href="./contact_form.html">Связь</a></li>
+          <li><a href="./dom_change.html">Чтение JS</a></li>
+          <li><a href="./algoritm_task.html">Задача</a></li>
+          <li><a href="./customtask.html">Создание задачи</a></li>
+          <li> <a href="./paseport.html"> Паспорт </a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Расширенная форма отправки данных</h1>
+      <form method="POST">
+        <fieldset>
+          <legend>Личные данные</legend>
+          <label for="lastName">Фамилия:</label>
+          <input type="text" id="lastName" required value="Иванов" />
+
+          <label for="firstName">Имя:</label>
+          <input type="text" id="firstName" required value="Иван" />
+
+          <label for="middleName">Отчество:</label>
+          <input type="text" id="middleName" required value="Иванович" />
+
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" required value="82347863456"/>
+
+          <label for="email">Электронная почта:</label>
+          <input type="email" id="email" required value="ivanivanovich@hse.ru" />
+        </fieldset>
+        <fieldset>
+          <legend>Адрес</legend>
+          <label for="country">Страна:</label>
+          <input type="text" id="country" required value="Иран"/>
+
+          <label for="city">Город:</label>
+          <input type="text" id="city" required value="Тегеранск" />
+
+          <label for="street">Улица:</label>
+          <input type="text" id="street" required value="проспект Ленина"/>
+
+          <label for="house">Дом:</label>
+          <input type="text" id="house" required value="1979" />
+
+          <label for="apartment">Квартира:</label>
+          <input type="text" id="apartment" required value="15"/>
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительные данные</legend>
+          <label for="birthdate">Дата рождения:</label>
+          <input type="date" id="birthdate" required value="09.09.1979" />
+
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" required value="638275632" />
+
+          <div class="radio_block">
+            <legend>Пол:</legend>
+            <label><input type="radio" name="gender" value="male" checked />М</label>
+            <label><input type="radio" name="gender" value="female" />Ж</label>
+          </div>
+
+          <div class="checkbox_block">
+            <legend>Согласие на обработку данных:</legend>
+            <label><input type="checkbox" name="consent" required checked /> Да</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Интересы</legend>
+          <label
+            ><input type="checkbox" name="interests" value="travel" checked />
+            Путешествия</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="sports" checked />
+            Спорт</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="reading" />
+            Чтение</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="cooking" />
+            Кулинария</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительные пожелания</legend>
+          <label for="comments">Комментарии:</label>
+          <textarea
+            id="comments"
+            rows="4"
+            placeholder="Введите ваши пожелания..."
+          > Здорово и весело </textarea>
+        </fieldset>
+
+        <button class="customButton" type="submit">Отправить</button>
+      </form>
+    </main>
+    <script src="./js/formtask.js"></script>
+  </body>
+</html>
