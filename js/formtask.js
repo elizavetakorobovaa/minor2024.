@@ -7,7 +7,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
     data[key] = value;
   });
 
-  fetch("https://your-server-url.com/api", {
+  fetch("https://www.google.com/webhp?hl=ru&sa=X&sqi=2&ved=0ahUKEwip9Mf79diJAxVRBxAIHUTlNl0QPAgI", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
